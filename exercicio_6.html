@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_6</title>
+</head>
+<body>
+    <script>
+    let numero = parseInt(prompt("Digite um número positivo:"));
+
+if (numero <= 0 || numero % 2 !== 0) {
+    alert("Número inválido.");
+} else {
+    let divisor = 1;
+
+    document.write("Divisores de " + numero + ":<br>");
+
+    while (divisor <= numero) {
+        if (numero % divisor === 0) {
+            document.write(divisor + "<br>");
+        }
+        divisor++;
+    }
+}
+    </script>
+</body>
+</html>

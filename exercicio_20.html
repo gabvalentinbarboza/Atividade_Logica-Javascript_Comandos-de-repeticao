@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_20</title>
+</head>
+<body>
+    <script>
+let total = 0;
+let contador = 0;
+let numero;
+
+do {
+    numero = parseInt(prompt("Digite um número inteiro:"));
+    total += numero;
+    contador++;
+} while (contador < 5);
+
+let media = total / 5;
+alert("A média dos números é: " + media.toFixed(2));
+
+    </script>
+</body>
+</html>

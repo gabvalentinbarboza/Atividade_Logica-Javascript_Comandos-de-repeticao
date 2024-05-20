@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_7</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Digite um número :"));
+let divisor = 2;
+let primo = true;
+
+while (divisor < numero) {
+    if (numero % divisor === 0) {
+        primo = false;
+        break;
+    }
+    divisor++;
+}
+
+if (primo && numero > 1) {
+    alert(numero + " é um número primo. :D");
+} else {
+    alert(numero + " não é um número primo. :(");
+}
+    </script>
+</body>
+</html>

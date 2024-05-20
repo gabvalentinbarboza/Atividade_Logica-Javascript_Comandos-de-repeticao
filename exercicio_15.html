@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        let totalIdade = 0;
+let quantidadePessoas = 0;
+let nome = prompt("Digite o nome da pessoa (ou 'fim' para encerrar):");
+
+while (nome.toLowerCase() !== "fim") {
+    let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+
+    // Verifica se a idade é válida
+    if (!isNaN(idade)) {
+        totalIdade += idade;
+        quantidadePessoas++;
+    }
+
+    nome = prompt("Digite o nome da próxima pessoa (ou 'fim' para encerrar):");
+}
+
+if (quantidadePessoas > 0) {
+    let mediaIdade = totalIdade / quantidadePessoas;
+    alert("A média das idades das pessoas é: " + mediaIdade.toFixed(2));
+} else {
+    alert("Nenhuma pessoa foi informada.");
+}
+
+    </script>
+</body>
+</html>

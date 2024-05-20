@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_38</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Digite um número inteiro:"));
+let a = 0, b = 1;
+
+document.write("Sequência de Fibonacci até " + numero + ": " + a + ", " + b + ", ");
+
+for (let i = 2; i <= numero; i++) {
+    let temp = a + b;
+    document.write(temp + ", ");
+    a = b;
+    b = temp;
+}
+
+    </script>
+</body>
+</html>

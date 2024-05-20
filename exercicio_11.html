@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_11</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Digite um número inteiro:"));
+let somaPares = 0;
+let contador = 2; // Começa a contar a partir do número 2, pois 1 não é par
+
+while (contador <= numero) {
+    if (contador % 2 === 0) {
+        somaPares += contador;
+    }
+    contador++;
+}
+
+alert("A soma de todos os números pares entre 1 e " + numero + " é: " + somaPares);
+    </script>    
+</body>
+</html>

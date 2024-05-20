@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_22</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Digite um número inteiro:"));
+let contador = 2;
+let primo = true;
+
+do {
+    if (numero % contador === 0) {
+        primo = false;
+        break;
+    }
+    contador++;
+} while (contador < numero);
+
+if (primo && numero > 1) {
+    alert(numero + " é um número primo.");
+} else {
+    alert(numero + " não é um número primo.");
+}
+
+    </script>   
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_30</title>
+</head>
+<body>
+    <script>
+        let totalIdade = 0;
+let contador = 0;
+let nome;
+
+do {
+    nome = prompt("Digite o nome da pessoa (ou 'fim' para encerrar):");
+    if (nome.toLowerCase() !== "fim") {
+        let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+        totalIdade += idade;
+        contador++;
+    }
+} while (nome.toLowerCase() !== "fim");
+
+if (contador > 0) {
+    let mediaIdade = totalIdade / contador;
+    alert("A média de idade das pessoas é: " + mediaIdade.toFixed(2));
+} else {
+    alert("Nenhuma pessoa foi informada.");
+}
+    </script>
+</body>
+</html>
